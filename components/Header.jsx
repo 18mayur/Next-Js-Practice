@@ -15,7 +15,16 @@ const Header = () => {
           <Image src={logoImg} alt="logo" priority />
           NextLevel Food
         </Link>
-        <NavLink />
+        <nav className={classes.nav}>
+          <ul>
+            <li>
+              <NavLink href="/meals">Browser Meals</NavLink>
+            </li>
+            <li>
+              <NavLink href="/community">Foodies Meals</NavLink>
+            </li>
+          </ul>
+        </nav>
       </header>
     </>
   );

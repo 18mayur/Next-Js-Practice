@@ -1,6 +1,9 @@
-import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
-const meals = () => {
+import classes from "./meals-grid.module.css";
+
+export default function MealItem({ title, slug, image, summary, creator }) {
   return (
     <article className={classes.meal}>
       <header>
@@ -20,6 +23,4 @@ const meals = () => {
       </div>
     </article>
   );
-};
-
-export default meals;
+}
